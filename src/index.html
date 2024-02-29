@@ -3,11 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <script src="index.js" type="module"></script>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  <main>
+    <textarea name="user-input">
+  </textarea>
+    <ul>
+      <li class="li" data-testid="word-count">Recuento de palabras: 0</li>
+      <li class="li" data-testid="character-count">Recuento de carácteres: 0</li>
+      <li class="li" data-testid="character-no-spaces-count">Contador de carácteres sin espacio: 0</li>
+      <li class="li" data-testid="number-count">Recuento de números: 0</li>
+      <li class="li" data-testid="number-sum">Suma total de números: 0</li>
+      <li class="li" data-testid="word-length-average">Longitud media de palabras: 0</li>
+    </ul>
+<button id="reset-button">Limpiar
+</button>
+
+  </main>
+
+  <footer><p>DEV014 Javiera Ferrada</p>
+  </footer>
+<!--  -->
 </body>
+
 </html>

@@ -498,7 +498,6 @@ Por este motivo, es necesario agregar lo siguiente:
 * [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de palabras_ debe tener un atributo
 `data-testid` con valor `word-count`.
-
 * [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de caracteres_ debe tener un atributo
 `data-testid` con valor `character-count`.
