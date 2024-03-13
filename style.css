@@ -1,0 +1,112 @@
+/*Estilos generales*/
+body {
+    background-color: #FFC6C7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*Encabezado*/
+header {
+    background-color: #FFC6C7;
+    color:#333333;
+    text-align: center;
+    padding: auto;
+    position: absolute;
+    top: 1px; /* Ajuste el margen superior para que no estuviera tan pegado a la ventana del navegador*/
+    left: 50%;
+    transform: translateX(-50%); /*Para centrar horizontalmente un elemento de su contenedor padre*/
+}
+
+/*Main content*/
+main {
+    max-width: 800px;
+    margin: 20px auto; /* Alinear el contenido al centro vertical */
+    padding: 20px;
+} 
+
+/*textarea llamada por name*/
+textarea[name="user-input"] { 
+    width: 100%;
+    height: 180px; /*Lo cambié a px para hacerlo más alto y específico*/
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: #d6709c;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 2px dotted #C53472;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none; /*Evita que la usuaria cambie el tamaño manualmente*/
+    outline: none;
+}
+textarea[name="user-input"]:focus { 
+    border: 2px solid #C53472; /* Borde punteado de color rosa cuando se selecciona */
+}
+
+/*títulos que es solo "Analizador de texto*/
+h1 {
+    color:#C53472;
+}
+
+/*Lista*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    column-count: 2; /* Divide las listas en dos columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+}
+
+/*Elementos de la lista (métricas) ESPECÍFICOS*/
+.metric-item {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #b64174;
+    border: 2px solid #d6709c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Botón limpiar*/
+#reset-button {
+    background-color: #E299B8;
+    color: #C53472;
+    padding: 15px 25px; /*Establece el estilo del borde, en este caso, ninguno para eliminar el borde*/
+    border: none;
+    border-radius: 5px; /*Aplica esquinas redondeadas al botón*/
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+}
+
+#reset-button:hover {
+    box-shadow: 0px 0px 10px 0px rgba(222, 152, 187, 0.75);/* Agrega sombra al pasar el cursor sobre el botón */
+    transform: scale(1.05);/*Agranda el botón cuando se posiciona sobre él*/
+}
+
+#reset-button:active {
+    background-color: #d6709c;
+    color:#FFC6C7;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #b64174;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
