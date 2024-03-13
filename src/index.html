@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-
+  <title>Text Analyzer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,24 +13,21 @@
     <h1>Analizador de texto</h1>
   </header>
   <main>
-    <textarea name="user-input">
-  </textarea>
+    <textarea name="user-input" placeholder="Ingresa tu texto acá..."></textarea>
     <ul>
-      <li class="li" data-testid="word-count">Recuento de palabras: 0</li>
-      <li class="li" data-testid="character-count">Recuento de carácteres: 0</li>
-      <li class="li" data-testid="character-no-spaces-count">Contador de carácteres sin espacio: 0</li>
-      <li class="li" data-testid="number-count">Recuento de números: 0</li>
-      <li class="li" data-testid="number-sum">Suma total de números: 0</li>
-      <li class="li" data-testid="word-length-average">Longitud media de palabras: 0</li>
+      <li class="metric-item" data-testid="word-count">Recuento de palabras: 0</li>
+      <li class="metric-item" data-testid="character-count">Recuento de carácteres: 0</li>
+      <li class="metric-item" data-testid="character-no-spaces-count">Contador de carácteres sin espacio: 0</li>
+      <li class="metric-item" data-testid="number-count">Recuento de números: 0</li>
+      <li class="metric-item" data-testid="number-sum">Suma total de números: 0</li>
+      <li class="metric-item" data-testid="word-length-average">Longitud media de palabras: 0</li>
     </ul>
-<button id="reset-button">Limpiar
-</button>
-
+    <button id="reset-button">Limpiar texto</button>
   </main>
-
-  <footer><p>DEV014 Javiera Ferrada</p>
+  <footer>
+    <p>DEV014 Javiera Ferrada</p>
   </footer>
-<!--  -->
+
 </body>
 
 </html>
